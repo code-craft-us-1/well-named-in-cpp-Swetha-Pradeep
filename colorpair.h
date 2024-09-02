@@ -1,5 +1,5 @@
 #include <string>
-
+#pragma once   
 namespace TelCoColorCoder
  {
      enum MajorColor { WHITE, RED, BLACK, YELLOW, VIOLET };
@@ -40,4 +40,4 @@ namespace TelCoColorCoder
         int GetPairNumberFromColor(MajorColor major, MinorColor minor) ;
  }
     
- #pragma once   
+ 
