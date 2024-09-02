@@ -36,7 +36,7 @@ namespace TelCoColorCoder
         }
     }; 
     
-    #pragma once
+    //#pragma once
 
 
     ColorPair GetColorFromPairNumber(int pairNumber) {
