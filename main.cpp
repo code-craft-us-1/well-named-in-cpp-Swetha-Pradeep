@@ -1,6 +1,6 @@
 #include <iostream>
 #include <assert.h>
-#include <colorpair.h>
+#include "colorpair.h"
 using namespace TelCoColorCoder;
 
 void testNumberToPair(int pairNumber,

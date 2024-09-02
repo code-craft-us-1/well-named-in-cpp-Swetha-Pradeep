@@ -1,5 +1,5 @@
 #include <string>
-#pragma once
+
 namespace TelCoColorCoder
  {
     
