@@ -1,6 +1,5 @@
-#include <string>
-namespace TelCoColorCoder
-{
+#include <colorpair.h>
+namespace TelCoColorCoder{
     enum MajorColor { WHITE, RED, BLACK, YELLOW, VIOLET };
     enum MinorColor { BLUE, ORANGE, GREEN, BROWN, SLATE };
 
@@ -14,31 +13,6 @@ namespace TelCoColorCoder
     };
     int numberOfMinorColors =
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-
-    class ColorPair {
-    private:
-        MajorColor majorColor;
-        MinorColor minorColor;
-    public:
-        ColorPair(MajorColor major, MinorColor minor) :
-            majorColor(major), minorColor(minor)
-        {}
-        MajorColor getMajor() {
-            return majorColor;
-        }
-        MinorColor getMinor() {
-            return minorColor;
-        }
-        std::string ToString() {
-            std::string colorPairStr = MajorColorNames[majorColor];
-            colorPairStr += " ";
-            colorPairStr += MinorColorNames[minorColor];
-            return colorPairStr;
-        }
-    }; 
-    
-    //#pragma once
-
 
     ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
