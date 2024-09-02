@@ -34,7 +34,9 @@ namespace TelCoColorCoder
             colorPairStr += MinorColorNames[minorColor];
             return colorPairStr;
         }
-    }; #pragma once
+    }; 
+    
+    #pragma once
 
 
     ColorPair GetColorFromPairNumber(int pairNumber) {
