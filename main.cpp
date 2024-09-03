@@ -30,7 +30,7 @@ void printPair(){
          for (int minorColor=TelCoColorCoder::MinorColor::BLUE;minorColor!=TelCoColorCoder::MinorColor::BLUE;++minorColor){
              //int pairNumber = TelCoColorCoder::GetPairNumberFromColor((TelCoColorCoder::MajorColor)majorColor,(TelCoColorCoder::MinorColor)minorColor);     
              //std::cout<<majorColor<<" "<<minorColor<<" "<<pairNumber <<"\n";
-             std::cout<< (TelCoColorCoder::MajorColor)majorColor<<"\n";
+             std::cout<< "printpair"<<(TelCoColorCoder::MajorColor)majorColor<<"\n";
          } 
     }
    /*for (auto majorColor:TelCoColorCoder::MajorColor){
