@@ -26,7 +26,7 @@ void testPairToNumber(
 
 
 void printPair(){
-    std::cout<<"number of major colors"<<TelCoColorCoder::numberOfMajorColors<<"\n";
+    std::cout<<"number of major colors"<<sizeof(TelCoColorCoder::MajorColorNames) / sizeof(TelCoColorCoder::MajorColorNames[0])<<"\n";
 }
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
