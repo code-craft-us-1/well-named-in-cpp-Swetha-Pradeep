@@ -27,8 +27,8 @@ void testPairToNumber(
 
 void printPair(){
     std::cout<<"in printpair"<<"\n";
-    for (int majorColor=TelCoColorCoder::MajorColor::WHITE;majorColor!=TelCoColorCoder::MajorColor::VIOLET;++majorColor){
-         for (int minorColor=TelCoColorCoder::MinorColor::BLUE;minorColor!=TelCoColorCoder::MinorColor::BLUE;++minorColor){
+    for (int majorColor=0;majorColor<4;++majorColor){
+         for (int minorColor=0;minorColor<4;++minorColor){
              //int pairNumber = TelCoColorCoder::GetPairNumberFromColor((TelCoColorCoder::MajorColor)majorColor,(TelCoColorCoder::MinorColor)minorColor);     
              //std::cout<<majorColor<<" "<<minorColor<<" "<<pairNumber <<"\n";
              std::cout<< "printpair"<<(TelCoColorCoder::MajorColor)majorColor<<"\n";
