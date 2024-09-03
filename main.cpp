@@ -24,12 +24,16 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
+
+void printPair(){
+    std::cout<<"number of major colors"<<TelCoColorCoder::numberOfMajorColors<<"\n";
+}
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
-
+    printPair(); 
     return 0;
 }
