@@ -29,8 +29,9 @@ void printPair(){
    
     for (int majorColor=0;majorColor<4;++majorColor){
          for (int minorColor=0;minorColor<4;++minorColor){
-             int pairNumber = TelCoColorCoder::GetPairNumberFromColor((TelCoColorCoder::MajorColor)majorColor,(TelCoColorCoder::MinorColor)minorColor);     
-             std::cout<<(TelCoColorCoder::MajorColor)majorColor<<" "<<(TelCoColorCoder::MinorColor)minorColor<<" "<<pairNumber <<"\n";
+             int pairNumber = TelCoColorCoder::GetPairNumberFromColor((TelCoColorCoder::MajorColor)majorColor,(TelCoColorCoder::MinorColor)minorColor);  
+             Colorpair colorpair((TelCoColorCoder::MajorColor)majorColor,(TelCoColorCoder::MinorColor)minorColor);   
+             std::cout<<colorpair.ToString()<<" "<<pairNumber <<"\n";
              
          } 
     }
