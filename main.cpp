@@ -26,27 +26,22 @@ void testPairToNumber(
 
 
 void printPair(){
-    //std::cout<<"in printpair"<<"\n";
+   
     for (int majorColor=0;majorColor<4;++majorColor){
          for (int minorColor=0;minorColor<4;++minorColor){
              int pairNumber = TelCoColorCoder::GetPairNumberFromColor((TelCoColorCoder::MajorColor)majorColor,(TelCoColorCoder::MinorColor)minorColor);     
-             std::cout<<majorColor<<" "<<minorColor<<" "<<pairNumber <<"\n";
+             std::cout<<(TelCoColorCoder::MajorColor)majorColor<<" "<<(TelCoColorCoder::MinorColor)minorColor<<" "<<pairNumber <<"\n";
              
          } 
     }
-   /*for (auto majorColor:TelCoColorCoder::MajorColor){
-     for (auto minorColor:TelCoColorCoder::MinorColor){
-             int pairNumber = TelCoColorCoder::GetPairNumberFromColor(majorColor,minorColor);     
-             std::cout<<majorColor<<" "<<minorColor<<" "<<pairNumber <<"\n";
-        }
-    }*/
+  
 }
 int main() {
-    //testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
-    //testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
+    testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
+    testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
-    //testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
-   // testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
+    testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
+    testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
     printPair(); 
     return 0;
 }
